@@ -1,13 +1,13 @@
 import { StrictMode } from 'react';
 import { render } from 'react-dom';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import globalTheme from './styles/theme';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 render(
   <StrictMode>
-    <ChakraProvider theme={globalTheme}>
+    <ChakraProvider>
       <App />
     </ChakraProvider>
   </StrictMode>,
